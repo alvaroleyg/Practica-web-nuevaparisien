@@ -1,0 +1,241 @@
+/*FUENTES*/
+@font-face{
+    font-family: PinyonScriptCustom;
+    src: url(fuentes/Pinyon_Script/PinyonScript-Regular.ttf)
+}
+
+@font-face{
+    font-family: LoraCustom;
+    src: url(fuentes/Lora-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family: SpartanBoldCustom;
+    src: url(fuentes/Spartan/static/Spartan-Bold.ttf);
+}
+
+/*ESTILOS GENERALES*/
+
+body{
+    /*background-image: url(imagenes/patroncreadopormi_botonpixelado_espaciado.png);*/
+    font-family: LoraCustom;
+    margin: 0px;
+}
+
+/*CABECERA*/
+#header{
+    width: 100%;
+    height: 260px;
+    background-color:  #000080;
+    border-radius: 7px;
+    padding-top: 15px;
+    box-shadow: 0px 0px 7px gray;
+}
+
+#header h1{
+    font-family: SpartanBoldCustom;
+    font-weight: 900;
+    text-align: center;
+    /*color: #eb9e11;*/
+    /*color: rgb(255, 217, 0);*/
+    color: rgb(255, 230, 0);
+    font-size: 120px;
+    line-height: 0px;
+    margin-bottom: 100px;
+}
+
+#header h1 a{
+    color: rgb(255, 230, 0);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#header h1 a:hover{
+    text-shadow: 0px 0px 7px white;
+    letter-spacing: -5px;
+    font-size: 150px;
+}
+
+#header h2{
+    font-family: PinyonScriptCustom;
+    text-align: center;
+    /*color: #eb9e11;*/
+    /*color: rgb(255, 217, 0);*/
+    color: rgb(255, 230, 0);
+    font-size: 50px;
+}
+
+#header > img{
+    position: absolute;
+    width: 90px;
+    margin-left: 800px;
+}
+
+#header > img .boton1{
+
+}
+
+/*BARRA DE NAVEGACION*/
+#nav{
+    width: 100%;
+    height: 60px;
+    /*background-color: rgb(255, 217, 0);*/
+    background-color: #ffff66;
+    font-family: LoraCustom;
+    font-size: 20px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px gray;
+}
+
+#nav > ul{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 130px;
+    list-style: none;
+}
+
+#nav > ul > li{
+    float: left;
+    line-height: 60px;
+    border-right: 1px dashed gray;
+    transition: 0.3s;
+}
+
+#nav > ul > li:first-child{
+    border-left: 1px dashed gray;
+}
+
+#nav > ul > li > a{
+    display: block;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+#nav > ul > li > input{
+    border: 1px solid #ccc;
+    color: gray;
+    width: 180px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#nav > ul > li:hover{
+    background-color: orange;
+    box-shadow: 0px 0px 4px #333;
+}
+
+#nav > ul > li >a:hover{
+    color: white;
+}
+
+/*BARRA LATERAL IZQUIERDA*/
+#barranavegacionproductos{
+    float: left;
+    /*background-color: rgb(255, 175, 27);*/
+    /*background-color: #ffff66;*/
+    /*background-color: #000080;*/
+    background-color: orange;
+    height: 1036px;
+    width: 230px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px solid #333;
+}
+
+#barranavegacionproductos ul{
+    color: black;
+    font-size: 22px;
+    list-style: none;
+    line-height: 100px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+/*CONTENIDO*/
+section{
+    /*
+    background-image: url(imagenes/logonuevaparisien_opaco.jpg);
+    background-repeat: no-repeat;
+    background-size: 22%;
+    background-position: center;
+    background-attachment: fixed;
+    */
+}
+
+#sobrenosotros{
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 350px; 
+    padding-bottom: 25px;
+}
+
+section > h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+#fotoantigua{
+    float: right;
+}
+
+/*TIENDA ONLINE*/
+#tabladeproductos{
+    padding-top: 25px;
+    padding-left: 280px;
+    padding-right: 350px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+article{
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+
+/*BARRA LATERAL DERECHA*/
+#asidecarrito{
+    float: right;
+    /*background-color: rgb(255, 175, 27);*/
+    /*background-color: #ffff66;*/
+    /*background-color: #000080;*/
+    background-color: orange;
+    height: 100%;
+    width: 300px;
+    color: #333333;
+    text-align: center;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px gray;
+}
+
+#asidecarrito h2{
+    padding-bottom: 33px;
+    border-bottom: 1px dashed #333333;
+}
+
+#asidecarrito iframe{
+    padding-top: 22px;
+}
+
+/*FOOTER*/
+#footer{
+    /*background-color: #ffff66;*/
+    background-color: rgb(255, 230, 0);
+    color: #333;
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    box-shadow: 0px 0px 7px gray;
+}
